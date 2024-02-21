@@ -1,7 +1,7 @@
 #Gestion Eventos Deportivos
 
-## Nombre integrante 1
-## Nombre integrante 2
+## Álvaro Pérez
+## Juan Manuuel Saborido Baena
 
 
 ### **Descripcion del proyecto**
