@@ -1,4 +1,4 @@
-package Eventos_Deportivos;
+package Eventos_Deportivos.clases;
 
 public class Participante {
     //Atributos

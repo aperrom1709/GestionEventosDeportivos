@@ -1,4 +1,6 @@
-package Eventos_Deportivos;
+package Eventos_Deportivos.clases;
+
+import Eventos_Deportivos.clases.Participante;
 
 public class ParticipanteCarrera extends Participante {
     //Atributos
