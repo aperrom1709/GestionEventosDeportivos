@@ -16,8 +16,8 @@ public class Participante {
     }
 
     @Override
-    public boolean equals(Object Part) {
-        if(Part instanceof Participante participante) {
+    public boolean equals(Object part) {
+        if(part instanceof Participante participante) {
             return this.dni.equalsIgnoreCase(participante.dni);
         } else {
             return false;
