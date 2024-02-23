@@ -12,13 +12,22 @@ public class Participante {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Dni "+this.dni+" Nombre: "+this.nombre+" Apellidos: "+this.apellidos+" Edad: "+this.edad;
     }
 
+    @Override
+    public boolean equals(Object Part) {
+        if(Part instanceof Participante participante) {
+            return this.dni.equalsIgnoreCase(participante.dni);
+        } else {
+            return false;
+        }
+
+    }
 
     //constructores
     public Participante ( String dni, String nombre, String apellidos, int edad){
-        this.dni=dni;
+        setDni(dni);
         this.nombre=nombre;
         this.apellidos=apellidos;
         this.edad=edad;
