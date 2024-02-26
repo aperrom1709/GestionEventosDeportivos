@@ -1,8 +1,8 @@
 #Gestion Eventos Deportivos
 
 ## Álvaro Pérez
-## Juan Manuuel Saborido Baena
+## Juan Manuel Saborido Baena
 
 
 ### **Descripcion del proyecto**
-Descripcion del proyecto dada por Alvaro
+Descripción del proyecto dada por Álvaro
