@@ -7,27 +7,25 @@ public class ParticipanteCarrera extends Participante {
     private double tiempo;
 
 
+    //  MÉTODOS
 
-
-
-
-
-
-    //metodos
+    //  COSNTRUCTOR
     public ParticipanteCarrera(String dni, String nombre, String apellidos, int edad, double tiempo) {
         super(dni, nombre, apellidos, edad);
-        this.tiempo=tiempo;
+        this.tiempo = tiempo;
 
 
     }
 
+
+    //  Cadena de información
     @Override
     public String toString() {
-        return "Dni "+ this.getDni() +" Nombre: "+this.getNombre()+" Apellidos: "+this.getApellidos()+" Edad: "+this.getEdad()+" tiempo: "+this.tiempo;
+        return "\nDni: " + this.getDni() + "\nNombre: " + this.getNombre() + "\nApellidos: " + this.getApellidos() + "\nEdad: " + this.getEdad() + "\nTiempo: " + this.tiempo + "\n";
     }
 
 
-    //Getter y Setter
+    //  GETTERS Y SETTERS
 
     public double getTiempo() {
         return tiempo;

@@ -56,7 +56,7 @@ public class Participante {
     //  Cadena de información
     @Override
     public String toString() {
-        return "Dni " + this.dni + " Nombre: " + this.nombre + " Apellidos: " + this.apellidos + " Edad: " + this.edad;
+        return "\nDni: " + this.dni + "\nNombre: " + this.nombre + "\nApellidos: " + this.apellidos + "\nEdad: " + this.edad;
     }
 
     //  Comprobación de dos participantes con el mismo dni
