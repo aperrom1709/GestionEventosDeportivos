@@ -1,39 +1,25 @@
 package Eventos_Deportivos.clases;
 
 public class Participante {
-    //Atributos
+    //  ATRIBUTOS
     private String dni;
     private String nombre;
     private String apellidos;
     private int edad;
 
-    //metodos
+    //  MÉTODOS
 
 
-    @Override
-    public String toString() {
-        return "Dni "+this.dni+" Nombre: "+this.nombre+" Apellidos: "+this.apellidos+" Edad: "+this.edad;
-    }
-
-    @Override
-    public boolean equals(Object part) {
-        if(part instanceof Participante participante) {
-            return this.dni.equalsIgnoreCase(participante.dni);
-        } else {
-            return false;
-        }
-
-    }
-
-    //constructores
-    public Participante ( String dni, String nombre, String apellidos, int edad){
+    //  CONSTRUCTOR
+    public Participante(String dni, String nombre, String apellidos, int edad) {
+        this.dni = dni;
         setDni(dni);
-        this.nombre=nombre;
-        this.apellidos=apellidos;
-        this.edad=edad;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
     }
 
-    //Getter y setters
+    //  GETTERS Y SETTERS
     public String getDni() {
         return dni;
     }
@@ -65,4 +51,24 @@ public class Participante {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+
+
+    //  Cadena de información
+    @Override
+    public String toString() {
+        return "Dni " + this.dni + " Nombre: " + this.nombre + " Apellidos: " + this.apellidos + " Edad: " + this.edad;
+    }
+
+    //  Comprobación de dos participantes con el mismo dni
+    @Override
+    public boolean equals(Object part) {
+        if (part instanceof Participante participante) {
+            return this.dni.equalsIgnoreCase(participante.dni);
+        } else {
+            return false;
+        }
+
+    }
+
+
 }
