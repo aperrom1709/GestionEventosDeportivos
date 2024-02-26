@@ -1,8 +1,10 @@
 package Eventos_Deportivos;
 
-public interface Ganador {
-    //metodos
+import Eventos_Deportivos.clases.Participante;
 
+public interface Ganador {
+    //  MÉTODO
+    public Participante obtenerGanador();
 
 
 }
