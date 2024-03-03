@@ -1,7 +1,5 @@
 package Eventos_Deportivos.clases;
 
-import Eventos_Deportivos.Ganador;
-
 public class Participante {
     //  ATRIBUTOS
     private String dni;

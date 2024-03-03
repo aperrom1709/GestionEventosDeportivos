@@ -1,6 +1,6 @@
 package Eventos_Deportivos.clases;
 
-import Eventos_Deportivos.Ganador;
+import Eventos_Deportivos.interfaz.Ganador;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

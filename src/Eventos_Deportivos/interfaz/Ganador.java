@@ -1,4 +1,4 @@
-package Eventos_Deportivos;
+package Eventos_Deportivos.interfaz;
 
 import Eventos_Deportivos.clases.Participante;
 

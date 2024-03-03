@@ -1,7 +1,5 @@
 package Eventos_Deportivos.clases;
 
-import Eventos_Deportivos.Ganador;
-
 import java.util.ArrayList;
 
 public class Equipo implements Comparable<Equipo> {
