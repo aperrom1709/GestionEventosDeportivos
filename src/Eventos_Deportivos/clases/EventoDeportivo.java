@@ -14,11 +14,11 @@ public abstract class EventoDeportivo implements Ganador {
     private ArrayList<Participante> participantes;
 
     //  MÉTODOS
-    public EventoDeportivo(String nombre, LocalDateTime fecha, String lugar, ArrayList<Participante> participantes) {
+    public EventoDeportivo(String nombre, LocalDateTime fecha, String lugar) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.lugar = lugar;
-        this.participantes = participantes;
+       this.participantes = null;
     }
 
     //  GETTERS Y SETTERS
@@ -63,7 +63,7 @@ public abstract class EventoDeportivo implements Ganador {
         return false;
     }
 
-    public abstract Participante obtenerGanador();
+    public abstract ArrayList<Participante> obtenerGanador();
 
 
 }

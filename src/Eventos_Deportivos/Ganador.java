@@ -2,9 +2,15 @@ package Eventos_Deportivos;
 
 import Eventos_Deportivos.clases.Participante;
 
+import java.util.ArrayList;
+
 public interface Ganador {
     //  MÉTODO
-    public Participante obtenerGanador();
+
+    /*
+    Que tiene que devolver este método?
+     */
+    public ArrayList<Participante> obtenerGanador();
 
 
 }

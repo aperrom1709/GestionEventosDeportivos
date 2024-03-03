@@ -19,9 +19,9 @@ public class ParticipanteCarrera extends Participante {
 
 
     //  Cadena de información
-    @Override
     public String toString() {
-        return "\nDni: " + this.getDni() + "\nNombre: " + this.getNombre() + "\nApellidos: " + this.getApellidos() + "\nEdad: " + this.getEdad() + "\nTiempo: " + this.tiempo + "\n";
+        return "\nDni: " + this.getDni() + "\nNombre: " + this.getNombre() + "\nApellidos: " + this.getApellidos() + "\nEdad: " + this.getEdad() + "\nTiempo: " + this.tiempo +
+                "\n";
     }
 
 

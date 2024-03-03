@@ -15,7 +15,6 @@ public class Participante {
     //  CONSTRUCTOR
     public Participante(String dni, String nombre, String apellidos, int edad) {
         this.dni = dni;
-        setDni(dni);
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
@@ -56,21 +55,19 @@ public class Participante {
 
 
     //  Cadena de información
-    @Override
+
     public String toString() {
         return "\nDni: " + this.dni + "\nNombre: " + this.nombre + "\nApellidos: " + this.apellidos + "\nEdad: " + this.edad;
     }
 
     //  Comprobación de dos participantes con el mismo dni
-    @Override
-    public boolean equals(Object part) {
-        if (part instanceof Participante participante) {
-            return this.dni.equalsIgnoreCase(participante.dni);
+
+    public boolean equals(Participante p) {
+        if (p.getDni().equalsIgnoreCase(this.dni)) {
+            return true;
         } else {
             return false;
         }
 
     }
-
-
 }
