@@ -9,17 +9,25 @@ public class TorneoDeFutbol extends EventoDeportivo {
 
     public TorneoDeFutbol(String nombre, LocalDateTime fecha, String lugar) {
         super(nombre, fecha, lugar);
-        equipos = null;
+        equipos = new ArrayList<Equipo>();
+    }
+
+    public ArrayList<Equipo> getEquipos() {
+        return equipos;
     }
 
     @Override
     public ArrayList<Participante> obtenerGanador() {
+        int numMayorPuntos = 0;
+        int pos = 0;
         for (int i = 0; i < equipos.size(); i++) {
-            if (equipos.get(i).getPuntos() > equipos.get(i).getPuntos()) {
-                equipos.get(i).getJugadores();
+            if (equipos.get(i).getPuntos() > numMayorPuntos) {
+                numMayorPuntos = equipos.get(i).getPuntos();
+                pos = i;
             }
         }
-        return null;
+        ArrayList<Participante> participantes = equipos.get(pos).getJugadores();
+        return participantes;
     }
 
     public boolean inscribirEquipo(Equipo e) {

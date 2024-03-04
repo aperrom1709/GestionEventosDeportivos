@@ -12,7 +12,7 @@ public class Equipo implements Comparable<Equipo> {
     public Equipo(String nombre, int puntos) {
         this.nombre = nombre;
         this.puntos = puntos;
-        jugadores = null;
+         jugadores = new ArrayList<Participante>();
 
     }
 
@@ -67,7 +67,7 @@ public class Equipo implements Comparable<Equipo> {
         infoEquipo = "\nNombre de equipo " + nombre + "\nPuntos del equipo " + puntos;
         String jugador = "Jugadores:\n ";
         for (int i = 0; i < jugadores.size(); i++) {
-            jugador.concat(jugadores.get(i).getNombre() + jugadores.get(i).getApellidos() + "\n");
+            jugador.concat(jugadores.get(i).getNombre() +" "+ jugadores.get(i).getApellidos() + "\n");
         }
         return infoEquipo + jugador;
     }
@@ -86,7 +86,7 @@ public class Equipo implements Comparable<Equipo> {
     public int compareTo(Equipo eq) {
 
         if (eq.puntos < this.puntos) {
-            return 3;
+            return 1;
         }
         if (eq.puntos > this.puntos) {
             return -1;

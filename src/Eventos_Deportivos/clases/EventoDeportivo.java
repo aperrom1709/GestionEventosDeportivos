@@ -18,7 +18,7 @@ public abstract class EventoDeportivo implements Ganador {
         this.nombre = nombre;
         this.fecha = fecha;
         this.lugar = lugar;
-       this.participantes = null;
+       this.participantes = new ArrayList<Participante>();
     }
 
     //  GETTERS Y SETTERS
