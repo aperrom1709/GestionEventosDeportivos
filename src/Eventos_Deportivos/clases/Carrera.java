@@ -8,7 +8,7 @@ public class Carrera extends EventoDeportivo {
     private double distancia;
 
 
-    public Carrera(double distancia, String nombre, LocalDateTime fecha, String lugar) {
+    public Carrera(String nombre, LocalDateTime fecha, String lugar,double distancia) {
         super(nombre, fecha, lugar);
         this.distancia = distancia;
     }
