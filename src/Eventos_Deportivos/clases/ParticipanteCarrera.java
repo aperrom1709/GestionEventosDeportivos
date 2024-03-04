@@ -20,7 +20,8 @@ public class ParticipanteCarrera extends Participante {
 
     //  Cadena de información
     public String toString() {
-        return "\nDni: " + this.getDni() + "\nNombre: " + this.getNombre() + "\nApellidos: " + this.getApellidos() + "\nEdad: " + this.getEdad() + "\nTiempo: " + this.tiempo +
+        return "\nDni: " + this.getDni() + "\nNombre: " + this.getNombre() + "\nApellidos: " + this.getApellidos()
+                + "\nEdad: " + this.getEdad() + "\nTiempo: " + this.tiempo +" minutos"+
                 "\n";
     }
 
