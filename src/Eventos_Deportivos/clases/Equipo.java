@@ -64,12 +64,11 @@ public class Equipo implements Comparable<Equipo> {
     @Override
     public String toString() {
         String infoEquipo = "";
-        infoEquipo = "\nNombre de equipo " + nombre + "\nPuntos del equipo " + puntos+ "\n Jugadores: \n";
-        String jugador = "\nJugadores:\n ";
+        infoEquipo = "\nNombre de equipo " + nombre + "\nPuntos del equipo " + puntos;
         for (int i = 0; i < jugadores.size(); i++) {
-            jugador.concat(jugadores.get(i).getNombre() +" "+ jugadores.get(i).getApellidos() + "\n");
+          String  jugador = "\nJugadores:\n "+jugadores.get(i).getNombre()+ " "+ jugadores.get(i).getApellidos();
         }
-        return infoEquipo + jugador;
+        return infoEquipo +"\n" +jugadores+ "\n";
     }
 
     //  Comprobación de dos equipos con el mismo nombre

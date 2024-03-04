@@ -32,6 +32,12 @@ public class Main {
         Participante p2 = new Participante("27364781H", "Luis", "Ramírez", 40);
         Participante p3 = new Participante("29102781F", "Jorge", "Sánchez", 32);
         Participante p4 = new Participante("34583029J", "Jorge", "Sánchez", 42);
+        Participante p5 = new Participante("27364781H", "Luis", "Ramírez", 28);
+        Participante p6 = new Participante("27364781H", "Luis", "Ramírez", 27);
+        Participante p7 = new Participante("27364781H", "Luis", "Ramírez", 26);
+        Participante p8 = new Participante("27364781H", "Luis", "Ramírez", 25);
+        Participante p9 = new Participante("27364781H", "Luis", "Ramírez", 32);
+        Participante p10 = new Participante("27364781H", "Luis", "Ramírez", 23);
 
         //  Inscripción a cada evento
         edCarrera.inscribirParticipante(pc1);
