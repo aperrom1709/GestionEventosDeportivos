@@ -14,11 +14,16 @@ public class TorneoDeFutbol extends EventoDeportivo {
 
     @Override
     public ArrayList<Participante> obtenerGanador() {
-
+        for (int i = 0; i < equipos.size(); i++) {
+            if (equipos.get(i).getPuntos() > equipos.get(i).getPuntos()) {
+                equipos.get(i).getJugadores();
+            }
+        }
+        return null;
     }
 
-    public  boolean inscribirEquipo(Equipo e){
-        if (equipos.add(e)){
+    public boolean inscribirEquipo(Equipo e) {
+        if (equipos.add(e)) {
             return true;
         }
         return false;
