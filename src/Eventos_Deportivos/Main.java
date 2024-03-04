@@ -24,86 +24,53 @@ public class Main {
         Equipo eq2 = new Equipo("Málaga", 40);
 
         //  Participantes
-        Participante p1 = new Participante("231243A", "Jose", "Pérez", 24);
-        Participante p2 = new Participante("4325425A", "Luis", "Ramírez", 40);
-        Participante p3 = new Participante("4323243245A", "Jorge", "Sánchez", 32);
+        ParticipanteCarrera pc1 = new ParticipanteCarrera("27183928L", "Jose", "Pérez", 24, 15000.00);
+        ParticipanteCarrera pc2 = new ParticipanteCarrera("27384028P", "Carlos", "Sainz", 30, 20000.00);
+        Participante p1 = new Participante("45293784D", "Francisco", "López", 27);
+        Participante p2 = new Participante("27364781H", "Luis", "Ramírez", 40);
+        Participante p3 = new Participante("29102781F", "Jorge", "Sánchez", 32);
 
-        edCarrera.inscribirParticipante(p1);
+        edCarrera.inscribirParticipante(pc1);
+        edCarrera.inscribirParticipante(pc2);
         edTorneoFutbol.inscribirEquipo(eq1);
         edTorneoFutbol.inscribirEquipo(eq2);
 
-
-        Scanner scan = new Scanner(System.in);
-        int boton = 0;
-        while (boton != 9) {
-            System.out.println("""
-                                        
-                    1.  Añadir jugador.
-                    2.  Eliminar jugador.
-                    3.  Mostrar información de los participantes.
-                    4.  Mostrar información de los equipos
-                                        
-                                        
-                    """);
-            boton = scan.nextInt();
-
-            switch (boton) {
-                case 1:
-                    eq1.anadirJugador(p1);
-                    eq2.anadirJugador(p2);
-                    eq2.anadirJugador(p3);
-                    break;
-                case 2:
-                    eq2.eliminarJugador(p3);
-                    break;
-                case 3:
-                    System.out.println(p1.toString());
-                    System.out.println(p2.toString());
-                    System.out.println(p3.toString());
-                    break;
-                case 4:
-                    System.out.println(eq1.toString());
-                    System.out.println(eq2.toString());
-                case 5:
-
-            }
-        }
-
-
-
-/*
+        //  Los jugadores que pertenecen a un equipo
+        eq1.anadirJugador(p1);
         eq1.anadirJugador(p2);
         eq2.anadirJugador(p3);
 
 
-        edCarrera.inscribirParticipante(p1);
-        edTorneoFutbol.inscribirEquipo(eq1);
-        edTorneoFutbol.inscribirEquipo(eq2);
-
-
         //  Añadir jugadores
-        if (eq1.anadirJugador(p3)) {
+        if (eq2.anadirJugador(p2)) {
             System.out.println("jugador añadido correctamente");
         }
         //  Eliminar jugadores
-        if (eq1.eliminarJugador(p2)) {
+        if (eq2.eliminarJugador(p3)) {
             System.out.println("jugador eliminado correctamente");
         }
 
 
         //  Mostrar informacion de participantes
-        p1.toString();
-        p2.toString();
-        p3.toString();
+        System.out.println("\n" + "<<<<<<<<<<<<< Información de los participantes >>>>>>>>>>>>>>" + "\n");
+
+        System.out.println(pc1.toString());
+        System.out.println(pc2.toString());
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
 
         //  Mostrar informacion de equipos
-        eq1.toString();
+
+        System.out.println("\n" + "<<<<<<<<<<<<< Información equipos >>>>>>>>>>>>>>" + "\n");
+        System.out.println(eq1.toString());
+        System.out.println(eq2.toString());
 
         //  Mostrar informacion del ganador del Evento
-        edTorneoFutbol.obtenerGanador().toString();
-        edCarrera.obtenerGanador().toString();
 
+        System.out.println("\n" + "<<<<<<<<<<<<< Información del ganador del torneo de fútbol >>>>>>>>>>>>>>" + "\n");
 
+        System.out.println(edTorneoFutbol.obtenerGanador().toString());
         ArrayList<Equipo> equipos = edTorneoFutbol.getEquipos();
         while (equipos.size() > 0) {
             int pos = 0;
@@ -114,10 +81,15 @@ public class Main {
                     pos = i;
                 }
             }
-            equipos.get(pos).toString();
+            System.out.println(equipos.get(pos).toString());
             equipos.remove(pos);
         }
-        */
+
+        System.out.println("\n" + "<<<<<<<<<<<<< Información del ganador de la carrera >>>>>>>>>>>>>>" + "\n");
+
+        System.out.println(edCarrera.obtenerGanador().toString());
+
+
 
     }
 }

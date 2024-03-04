@@ -64,8 +64,8 @@ public class Equipo implements Comparable<Equipo> {
     @Override
     public String toString() {
         String infoEquipo = "";
-        infoEquipo = "\nNombre de equipo " + nombre + "\nPuntos del equipo: " + puntos;
-        String jugador = "\n ";
+        infoEquipo = "\nNombre de equipo " + nombre + "\nPuntos del equipo " + puntos;
+        String jugador = " Jugadores:\n ";
         for (int i = 0; i < jugadores.size(); i++) {
             jugador.concat(jugadores.get(i).getNombre() +" "+ jugadores.get(i).getApellidos() + "\n");
         }
