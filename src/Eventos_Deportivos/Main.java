@@ -20,8 +20,10 @@ public class Main {
                 "Andalucía");
 
         //  Equipos
-        Equipo eq1 = new Equipo("Sevilla", 38);
-        Equipo eq2 = new Equipo("Málaga", 40);
+        Equipo eq1 = new Equipo("Sevilla FC", 38);
+        Equipo eq2 = new Equipo("Málaga FC", 40);
+        Equipo eq3 = new Equipo("Huelva RD", 39);
+        Equipo eq4 = new Equipo("Cádiz CF", 45);
 
         //  Participantes
         ParticipanteCarrera pc1 = new ParticipanteCarrera("27183928L", "Jose", "Pérez", 24, 15000.00);
@@ -29,16 +31,21 @@ public class Main {
         Participante p1 = new Participante("45293784D", "Francisco", "López", 27);
         Participante p2 = new Participante("27364781H", "Luis", "Ramírez", 40);
         Participante p3 = new Participante("29102781F", "Jorge", "Sánchez", 32);
+        Participante p4 = new Participante("34583029J", "Jorge", "Sánchez", 42);
 
+        //  Inscripción a cada evento
         edCarrera.inscribirParticipante(pc1);
         edCarrera.inscribirParticipante(pc2);
         edTorneoFutbol.inscribirEquipo(eq1);
         edTorneoFutbol.inscribirEquipo(eq2);
+        edTorneoFutbol.inscribirEquipo(eq3);
+        edTorneoFutbol.inscribirEquipo(eq4);
 
         //  Los jugadores que pertenecen a un equipo
         eq1.anadirJugador(p1);
         eq1.anadirJugador(p2);
         eq2.anadirJugador(p3);
+        eq2.anadirJugador(p4);
 
 
         //  Añadir jugadores
@@ -59,12 +66,15 @@ public class Main {
         System.out.println(p1.toString());
         System.out.println(p2.toString());
         System.out.println(p3.toString());
+        System.out.println(p4.toString());
 
         //  Mostrar informacion de equipos
 
         System.out.println("\n" + "<<<<<<<<<<<<< Información equipos >>>>>>>>>>>>>>" + "\n");
         System.out.println(eq1.toString());
         System.out.println(eq2.toString());
+        System.out.println(eq3.toString());
+        System.out.println(eq4.toString());
 
         //  Mostrar informacion del ganador del Evento
 
